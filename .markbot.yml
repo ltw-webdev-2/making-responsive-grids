@@ -1,0 +1,56 @@
+repo: 'making-responsive-grids'
+canvasCourse: 'web-dev-2'
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css-order-grid-main
+  - css
+  - screenshots-all
+
+html:
+  - path: 'index.html'
+    has:
+      - '.grid > .unit'
+      - '.unit.xs-1.s-1.m-1.l-1-3'
+      - '.unit.xs-1.s-1.m-1-2.l-1-3'
+      - '.unit > img[src^="images/"]'
+      - '.unit > h1 + p + p'
+      - '.img-flex'
+    search:
+      - 'Fungi'
+      - 'These organisms are classified as a kingdom, Fungi, which is separate from the other eukaryotic life kingdoms of plants and animals.'
+      - 'A fungus is any member of the group of eukaryotic organisms that includes unicellular microorganisms such as yeasts and molds, as well as multicellular fungi that produce familiar fruiting forms known as mushrooms.'
+      - 'Armillaria solidipes'
+      - 'Armillaria solidipes is known to be one of the largest living organisms, where scientists have estimated a single specimen found in Malheur National Forest in Oregon to have been growing for some 2,400 years, covering 8.4 km² and colloquially named the “Humongous Fungus”.'
+      - 'Polypores'
+      - 'Most polypores inhabit tree trunks or branches consuming the wood, but some soil-inhabiting species form mycorrhiza with trees. Polypores are the most important agents of wood decay—playing a very significant role in nutrient cycling and carbon dioxide production of forest ecosystems.'
+
+css:
+  - path: 'css/main.css'
+    has:
+      - ['html', 'box-sizing', 'border-box', 'The `border-box` layout model is needed for this assignment—use the `borderbox` snippet']
+      - ['html', 'text-size-adjust', '100%']
+      - ['html', '-moz-text-size-adjust', '100%']
+      - ['html', '-ms-text-size-adjust', '100%']
+      - ['html', '-webkit-text-size-adjust', '100%']
+      - ['*', 'box-sizing', 'inherit', 'The `border-box` layout model is needed for this assignment—use the `borderbox` snippet']
+      - ['body', 'margin', '0']
+      - ['.img-flex', 'display', 'block']
+      - ['.img-flex', 'width', '100%']
+    search:
+      - '@-moz-viewport'
+      - '@-ms-viewport'
+      - '@-o-viewport'
+      - '@-webkit-viewport'
+      - '@viewport'
+  - path: 'css/grid.css'
+    has:
+      - ['.grid', 'overflow', 'hidden']
+      - ['.unit', 'float', 'left']
+      - ['.xs-1', 'width', '100%']
+      - ['@25', '.s-1', 'width', '100%']
+      - ['@38', '.m-1', 'width', '100%']
+      - ['@38', '.m-1-2', 'width', '50%']
+      - ['@60', '.l-1-3', 'width', '33.3333%']

@@ -47,8 +47,8 @@ css:
       - '@viewport'
   - path: 'css/grid.css'
     has:
-      - ['.grid', 'overflow', 'hidden']
-      - ['.unit', 'float', 'left']
+      - ['.grid', 'display', 'flex']
+      - ['.grid', 'flex-wrap', 'wrap']
       - ['.xs-1', 'width', '100%']
       - ['@25', '.s-1', 'width', '100%']
       - ['@38', '.m-1', 'width', '100%']
